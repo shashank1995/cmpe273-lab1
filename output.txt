@@ -1,0 +1,74 @@
+#Synchronous Request:
+
+I made 3 synchronous request and got each response with different timestamp. I also made a additional 4 request in order to calculate the average ping time. I calculated the difference in time between subsequent request and calculated the mean in order to find the average ping time.
+
+Sat, 01 Sep 2018 00:06:05 GMT
+Sat, 01 Sep 2018 00:06:06 GMT
+Sat, 01 Sep 2018 00:06:07 GMT
+
+Calculating average ping time:
+
+Sat, 01 Sep 2018 00:06:08 GMT
+Sat, 01 Sep 2018 00:06:09 GMT
+Sat, 01 Sep 2018 00:06:11 GMT
+Sat, 01 Sep 2018 00:06:13 GMT
+
+Note: So average ping time is 1.666667 seconds.
+
+#Asynchronous Request:
+
+I made 50 async request using grequests. As these requests were concurrent, we needed a substantial amount of requests to differentiate them. I also calculated the frequency of each request with different time. Here are my output:
+
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:52 GMT
+Fri, 31 Aug 2018 23:59:51 GMT
+
+Response with date: Fri, 31 Aug 2018 23:59:51 GMT has count of 42
+Response with date: Fri, 31 Aug 2018 23:59:52 GMT has count of 8 
